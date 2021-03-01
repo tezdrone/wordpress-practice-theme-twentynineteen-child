@@ -13,3 +13,8 @@ Requires PHP: 7.0
 License: Copyright Ben Mitchell, 2021
 Text Domain: twentytwentychild
 */
+
+.wp-block-quote {
+	background: #d7eeef;
+	border-radius: 4px;
+}
