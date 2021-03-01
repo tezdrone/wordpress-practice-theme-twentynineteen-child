@@ -18,3 +18,10 @@ Text Domain: twentytwentychild
 	background: #d7eeef;
 	border-radius: 4px;
 }
+
+/* Modify author bio */
+.author-bio .author-heading .avatar {
+	height: auto;
+	width: auto;
+	display: inline-block;
+}
