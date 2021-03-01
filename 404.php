@@ -20,6 +20,7 @@ get_header();
       <header class="page-header">
         <h1 class="page-title"><?php _e('Oops! That page can&rsquo;t be found.', 'twentynineteen'); ?></h1>
         <h2>Too bad really...</h2>
+
       </header><!-- .page-header -->
 
       <div class="page-content">
