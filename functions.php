@@ -38,6 +38,13 @@ function block_titles($title, $id = null)
 }
 add_filter('the_title', 'block_titles', 10, 2);
 
+//Remove the author from posts.
+//We are returning an empty function because the parent theme has a plugable function
+function twentynineteen_posted_by()
+{
+  //do nothing
+}
+
 
 //Remove functionality from parent theme after theme setup
 function remove_parent_functionality()
