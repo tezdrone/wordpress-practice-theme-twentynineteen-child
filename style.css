@@ -25,3 +25,7 @@ Text Domain: twentytwentychild
 	width: auto;
 	display: inline-block;
 }
+
+.main-navigation + .main-navigation {
+	font-size: 0.7em;
+}
