@@ -26,3 +26,14 @@ function twentynineteen_the_posts_navigation()
     )
   );
 }
+
+//If a post is in the category block, add "Cat is block!:" to the start of the title when rendering
+function block_titles($title, $id = null)
+{
+  if (in_category('block', $id)) {
+    $title = "Cat is Block!: " . $title;
+  }
+
+  return $title;
+}
+add_filter('the_title', 'block_titles', 10, 2);
