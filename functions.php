@@ -37,3 +37,12 @@ function block_titles($title, $id = null)
   return $title;
 }
 add_filter('the_title', 'block_titles', 10, 2);
+
+
+//Remove functionality from parent theme after theme setup
+function remove_parent_functionality()
+{
+  remove_action('widgets_init', 'twentynineteen_widgets_init');
+}
+
+add_action('after_setup_theme', 'remove_parent_functionality');
