@@ -14,3 +14,15 @@ function my_theme_enqueue_styles()
     wp_get_theme()->get('Version')
   );
 }
+
+//Plugs into the twentynineteen theme and overrides the function
+function twentynineteen_the_posts_navigation()
+{
+  the_posts_pagination(
+    array(
+      'mid_size'  => 2,
+      'prev_text' => '&laquo; <span class="nav-prev-text">Newer</span>',
+      'next_text' => '<span class="nav-next-text">Older</span> &r aquo;',
+    )
+  );
+}
