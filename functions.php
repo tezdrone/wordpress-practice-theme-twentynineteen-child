@@ -49,7 +49,7 @@ function twentynineteen_posted_by()
 //alter from parent theme after theme setup
 function twentynineteen_child_theme_setup()
 {
-  remove_action('widgets_init', 'twentynineteen_widgets_init');
+  // remove_action('widgets_init', 'twentynineteen_widgets_init');
 
   // Add a secondary menu in child theme
   register_nav_menus(
